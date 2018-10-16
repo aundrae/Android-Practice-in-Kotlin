@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/course_prompt"
+        android:entries="@array/course_array"/>
+
+   <ImageButton
+       android:id="@+id/showImg"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:scaleType="fitCenter"
+       android:layout_centerInParent="true"
+       android:src="@drawable/logo"/>
+
+    <ImageView
+        android:layout_below="@id/spinner"
+        android:id="@+id/clickShow"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/python"
+        android:visibility="invisible"/>
+
+    <ToggleButton
+        android:layout_below="@id/showImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleImg"/>
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/imgToggle"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/showImg"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/python"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mark"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/intent_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click me"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
